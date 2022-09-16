@@ -1,0 +1,19 @@
+{
+  "name": "ether-simple-storage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "shoaib shaikh",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "ethers": "^5.5.3",
+    "fs-extra": "^10.1.0",
+    "prettier": "^2.5.1",
+    "solc": "0.8.7-fixed"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
+  }
+}
